@@ -22,16 +22,17 @@ if (is_numeric($_GET['teamId'])) {
 		<td>Phone</td></tr>'
 	;
 
-	for each ($racers as $racer) {
+	foreach ($racers as $racer) {
 		echo '<tr><td>' . $racer['racerName'] . '</td>
 			<td>' . $racer['age'] . '</td>
 			<td>' . $racer['sex'] . '</td>
 			<td>' . $racer['phoneNum'] . '</td></tr>';
 	}
 
-	$conn = null
-	echo '</table>';	
-}
+	echo '</table>';
+
+	$conn = null	
+
 else {
 	header('location:default.php');
 }

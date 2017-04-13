@@ -4,7 +4,7 @@ require_once('header.php');
 
 ?>
 
-<form method="post" action="insert-racer.php">
+<form method="post" action="insert_racer.php">
 <div>
 	<label for="racerName">Racer Name</label>
 	<input name="racerName" id="racerName" required />

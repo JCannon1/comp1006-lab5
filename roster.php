@@ -37,6 +37,9 @@ if (is_numeric($_GET['teamId'])) {
 		
 
 
-$conn = null
+$conn = null 
+?>
+
+<?php
 
 ob_flush(); ?>

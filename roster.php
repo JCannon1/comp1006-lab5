@@ -6,6 +6,10 @@ require_once('header.php');
 
 if (is_numeric($_GET['teamId'])) {
     $teamId = $_GET['teamId'];
+}
+	else {
+	header('location:default.php');
+}
 	
 	require_once('db.php');
 
@@ -19,8 +23,7 @@ if (is_numeric($_GET['teamId'])) {
 		<tr><td>Racer</td>
 		<td>Age</td>
 		<td>Sex</td>
-		<td>Phone</td></tr>'
-	;
+		<td>Phone</td></tr>';
 
 	foreach ($racers as $racer) {
 		echo '<tr><td>' . $racer['racerName'] . '</td>
@@ -31,10 +34,9 @@ if (is_numeric($_GET['teamId'])) {
 
 	echo '</table>';
 
-	$conn = null	
+		
 
-else {
-	header('location:default.php');
-}
+
+$conn = null
 
 ob_flush(); ?>

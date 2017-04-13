@@ -19,7 +19,7 @@ $cmd->execute();
 $teams = $cmd->fetchAll();
 
 //loop through results to create links to roster page
-foreach ($team as $teams) {
+foreach ($teams as $team) {
 	echo '<li><a href="roster.php?teamId=' . $team['teamId'] . '">' . $team['teamName'] . '</a></li>';
 }
 

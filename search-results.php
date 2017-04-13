@@ -2,7 +2,7 @@
 
 require_once('header.php');
 
-//require_once('db.php');
+require_once('db.php');
 
 //get the search term(s)
 $userSearch = $_POST['keywords'];

@@ -23,7 +23,7 @@ foreach ($team as $teams) {
 	echo '<li><a href="roster.php?teamId=' . $team['teamId'] . '">' . $team['teamName'] . '</a></li>';
 }
 
-//$conn = null;
+$conn = null;
 
 ?>
 

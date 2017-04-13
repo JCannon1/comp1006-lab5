@@ -6,22 +6,22 @@ require_once('header.php');
 
 <form method="post" action="insert_racer.php">
 <div>
-	<label for="racerName">Racer Name</label>
+	<label for="racerName">Racer Name:</label>
 	<input name="racerName" id="racerName" required />
 </div>
 <div>
-	<label for="age">Age</label>
+	<label for="age">Age:</label>
 	<input name="age" id="age" maxlength="2" required />
 </div>
 <div>
-	<label for="sex">Sex</label>
+	<label for="sex">Sex:</label>
 	<select name="sex" id="sex">
 		<option value="F">F</option>
 		<option value="M">M</option>
 	</select>
 </div>
 <div>
-	<label for="phoneNum">Phone</label>
+	<label for="phoneNum">Phone:</label>
 	<input name="phoneNum" id="phoneNum" maxlength="15" required />
 </div>
 <div>

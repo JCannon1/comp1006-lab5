@@ -20,7 +20,7 @@ if (empty($_POST['sex'])) {
 }
 
 if (empty($_POST['phone_num'])) {
-	$form_ok = false;
+	$ok = false;
 	echo 'Phone Number is Required<br />';
 }
 
